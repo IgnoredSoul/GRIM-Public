@@ -1,0 +1,48 @@
+{
+  "name": "soulbot",
+  "version": "1.0.0",
+  "description": "GrimBot - Made by IGNOREDSOUL",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon ./src/index.js -i *.json -i /*.json -i /output -i *.jpg",
+    "pm2s": "pm2 start ./src/index.js",
+    "pm2e": "pm2 stop index",
+    "dev": "node ./src/index.js",
+    "build": ""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "child_process": "^1.0.2",
+    "convert-video": "^1.0.0",
+    "discord-buttons": "^4.0.0",
+    "discord-buttons-page-v13": "^1.0.6",
+    "discord-buttons-v13": "^4.0.2",
+    "discord.js": "^13.0.0",
+    "discord.js-buttons": "^1.0.0",
+    "discordjs-button-pagination": "^1.0.9",
+    "dotenv": "^10.0.0",
+    "fs": "^0.0.1-security",
+    "hmtai": "^2.0.10",
+    "i": "^0.3.7",
+    "import-modules": "^3.1.0",
+    "instagram-web-api": "^2.2.2",
+    "jimp": "^0.16.1",
+    "moment": "^2.29.2",
+    "node": "^17.1.0",
+    "node-fetch": "^3.2.1",
+    "npm": "^8.3.0",
+    "request-promise-core": "^1.1.4",
+    "slappey": "^4.0.0",
+    "tinycolor2": "^1.4.2",
+    "tools-for-instagram": "^1.8.12",
+    "tough-cookie-filestore2": "^1.0.0",
+    "unix-timestamp": "^0.2.0",
+    "video-converter": "^1.0.0",
+    "video-format-converter": "^1.1.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
