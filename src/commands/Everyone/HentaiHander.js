@@ -3,12 +3,15 @@ const { MessageEmbed } = require('discord.js');
 
 module.exports = class TestCommand extends BaseCommand {
   constructor() {
-    super('hentai', 'NSFW', ['Hentai', 'HENTAI', 'h', 'H']);
+    super('hentai', 'Everyone', ['Hentai', 'HENTAI', 'h', 'H']);
   }
 
     async run(client, message, args)
     {
       try{
+        if(!message.channel.nsfw) return message.channel.send('The commands under the NSFW section can only be used in a Age Restricted channel')
+        if(!args[0]) return message.channel.send("Please put a search term in.")
+
         const search = ['-loli', '-furry', '-futa', '-animal']
         var amount = 1;
   
